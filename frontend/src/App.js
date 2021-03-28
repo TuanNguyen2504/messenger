@@ -1,5 +1,6 @@
 import { Button } from '@material-ui/core';
 import Header from 'components/Header';
+import Navigation from 'components/Navigation';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -17,15 +18,22 @@ function App() {
 
   return (
     <Router>
-      <div className={`${classes.root} App h-100 w-100`}>
+      <div className={`${classes.root} App h-100vh w-100`}>
         <Header />
-        <Button
-          onClick={onClick}
-          className="m-20 trans-center"
-          variant="contained"
-          color="primary">
-          Change Theme
-        </Button>
+        <div className="d-flex">
+          <div className={`${classes.navWrapper} h-100vh`}>
+            <Navigation />
+          </div>
+          <div className="main-wrapper flex-grow-1">
+            <Button
+              onClick={onClick}
+              className="m-20 trans-center"
+              variant="contained"
+              color="primary">
+              Change Theme
+            </Button>
+          </div>
+        </div>
       </div>
     </Router>
   );

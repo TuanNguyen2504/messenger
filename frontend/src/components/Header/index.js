@@ -70,7 +70,7 @@ function Header() {
               <div className={`${classes.searchSm} pos-abs d-flex`}>
                 <ArrowBackIcon
                   onClick={() => setIsShowSmSearch(false)}
-                  className={`${classes.arrowIcon} cus-pointer`}
+                  className={`${classes.arrowIcon} cur-pointer`}
                 />
                 <InputBase
                   className={`${classes.searchInput} w-100`}

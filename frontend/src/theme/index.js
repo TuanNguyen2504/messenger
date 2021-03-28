@@ -23,6 +23,7 @@ const commons = {
   // common colors
   commonColor: {
     badge: '#ff486d',
+    online: '#39a635',
   },
 };
 

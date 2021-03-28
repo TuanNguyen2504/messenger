@@ -37,7 +37,8 @@
 
 // display-flex
 .flex {
-  &-dir-col {
+  &-col {
+    display: flex;
     flex-direction: column;
   }
   &-dir-reverse {
@@ -61,6 +62,11 @@
   &-hor-center {
     display: flex;
     justify-content: center;
+  }
+  &-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

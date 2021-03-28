@@ -8,7 +8,7 @@ export default makeStyles((theme) => ({
       fontSize: '1.2rem',
     },
 
-    boxShadow: theme.isLight ? '0 1px 6px 1px rgba(0,0,0,0.08)' : 'none',
+    boxShadow: theme.isLight ? '0 1px 4px 1px rgba(0,0,0,0.08)' : 'none',
     borderBottom: !theme.isLight
       ? `solid 1px ${theme.color.secondary}`
       : 'none',
@@ -40,13 +40,13 @@ export default makeStyles((theme) => ({
   },
 
   searchBar: {
-    flexBasis: '36rem',
+    flexBasis: '38rem',
     [theme.breakpoints.down('md')]: {
       flexBasis: '18.5%',
     },
 
     [theme.breakpoints.down(860)]: {
-      flexBasis: '36rem',
+      flexBasis: '40rem',
     },
   },
 
